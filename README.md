@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# AI Blog Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-screen **blog management dashboard** built with **React + Vite**.  
+Designed for front-end developers who want to manage blog drafts, categories, and settings in a clean, professional dashboard interface.
 
-Currently, two official plugins are available:
+This project focuses on **UI/UX, dashboard architecture, and product thinking**, with optional AI-assisted content generation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Full-screen dashboard layout**
+  - Fixed sidebar
+  - Sticky topbar
+  - Scrollable content area (real dashboard behavior)
 
-## Expanding the ESLint configuration
+- **Blog Draft Management**
+  - Create, view, and manage blog drafts
+  - Optimized for portfolio and technical blog workflows
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Category Management**
+  - Create, edit, and delete categories
+  - Automatic slug generation
+  - Color-coded categories
+  - Stored in `localStorage`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Settings Panel**
+  - Dark / Light theme toggle
+  - Display name customization
+  - Focus / motivation text
+  - Persistent user preferences via `localStorage`
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Modern UI**
+  - Glassmorphism-inspired cards
+  - Soft typography and spacing
+  - Minimal dark dashboard design
+  - Custom scrollbar styling
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **AI Integration (Optional)**
+  - AI-assisted summary generation
+  - Demo-safe fallback when API quota is unavailable
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Project Purpose
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is designed as a **portfolio-ready dashboard** to demonstrate:
+
+- Component-based UI architecture
+- State management with React hooks
+- Dashboard layout patterns used in real products
+- Clean, maintainable front-end code
+- UX-focused design decisions
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **TypeScript**
+- **CSS (custom, no UI library)**
+- **localStorage**
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+npm install
+npm run dev
