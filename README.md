@@ -59,3 +59,28 @@ This project is designed as a portfolio-ready dashboard to demonstrate:
 ```bash
 npm install
 npm run dev
+```
+
+The app will be available at:
+
+- http://localhost:5173
+
+---
+
+## 🔐 Environment Variables (Optional)
+
+If you want to enable AI features, create a `.env` file:
+
+```bash
+VITE_OPENAI_API_KEY=your_api_key_here
+```
+
+src/
+  pages/
+    PostsPage.tsx
+    CategoriesPage.tsx
+    SettingsPage.tsx
+  components/
+  services/
+  App.tsx
+  App.css
